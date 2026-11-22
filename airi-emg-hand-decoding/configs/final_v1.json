@@ -1,0 +1,129 @@
+{
+ "clf": [
+  {
+   "seeds": 3
+  },
+  {
+   "seeds": 3,
+   "steps": 1500
+  },
+  {
+   "seeds": 3,
+   "crop": 1000,
+   "bs": 32
+  },
+  {
+   "seeds": 3,
+   "inmode": "center"
+  },
+  {
+   "seeds": 3,
+   "feat": "envframe"
+  }
+ ],
+ "reg": [
+  {
+   "gru": 1,
+   "seeds": 3,
+   "w": 0.3333333333333333
+  },
+  {
+   "gru": 1,
+   "chdrop": 0.15,
+   "seeds": 3,
+   "w": 0.3333333333333333
+  },
+  {
+   "gru": 1,
+   "pseudo": 1,
+   "seeds": 3,
+   "w": 0.3333333333333333
+  },
+  {
+   "gru": 2,
+   "seeds": 3,
+   "w": 0.6
+  },
+  {
+   "gru": 2,
+   "chdrop": 0.15,
+   "seeds": 3,
+   "w": 0.6
+  },
+  {
+   "gru": 2,
+   "pseudo": 1,
+   "seeds": 3,
+   "w": 0.6
+  },
+  {
+   "gru": 2,
+   "hidden": 96,
+   "seeds": 3,
+   "w": 0.6
+  },
+  {
+   "gru": 2,
+   "steps": 1500,
+   "drop": 0.3,
+   "seeds": 3,
+   "w": 0.6
+  },
+  {
+   "feat": "envcorr",
+   "seeds": 3,
+   "w": 0.5
+  },
+  {
+   "feat": "envcorr",
+   "chdrop": 0.15,
+   "seeds": 3,
+   "w": 0.5
+  },
+  {
+   "feat": "envcorr",
+   "pseudo": 1,
+   "seeds": 3,
+   "w": 0.5
+  },
+  {
+   "feat": "envraw",
+   "chdrop": 0.15,
+   "seeds": 3,
+   "w": 0.375
+  },
+  {
+   "feat": "envraw",
+   "chdrop": 0.3,
+   "seeds": 3,
+   "w": 0.375
+  },
+  {
+   "feat": "envraw",
+   "chdrop": 0.15,
+   "pseudo": 1,
+   "seeds": 3,
+   "w": 0.375
+  },
+  {
+   "feat": "envraw",
+   "chdrop": 0.15,
+   "gru": 3,
+   "seeds": 3,
+   "w": 0.375
+  },
+  {
+   "feat": "envraw",
+   "gru": 2,
+   "seeds": 3,
+   "w": 1.0
+  },
+  {
+   "feat": "envraw",
+   "gru": 2,
+   "chdrop": 0.15,
+   "seeds": 3,
+   "w": 1.0
+  }
+ ]
+}
