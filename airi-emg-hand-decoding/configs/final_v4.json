@@ -1,0 +1,363 @@
+{
+ "clf": [
+  {
+   "seeds": 3
+  },
+  {
+   "seeds": 3,
+   "steps": 1500
+  },
+  {
+   "seeds": 3,
+   "crop": 1000,
+   "bs": 32
+  },
+  {
+   "seeds": 3,
+   "inmode": "center"
+  },
+  {
+   "seeds": 3,
+   "feat": "envframe"
+  },
+  {
+   "seeds": 3,
+   "feat": "envraw",
+   "steps": 1500
+  },
+  {
+   "seeds": 3,
+   "feat": "envcorr",
+   "steps": 1500
+  }
+ ],
+ "reg": [
+  {
+   "gru": 1,
+   "seeds": 3,
+   "w": 0.3333333333333333
+  },
+  {
+   "gru": 1,
+   "chdrop": 0.15,
+   "seeds": 3,
+   "w": 0.3333333333333333
+  },
+  {
+   "gru": 1,
+   "pseudo": 1,
+   "seeds": 3,
+   "w": 0.3333333333333333
+  },
+  {
+   "gru": 2,
+   "seeds": 3,
+   "w": 0.25
+  },
+  {
+   "gru": 2,
+   "chdrop": 0.15,
+   "seeds": 3,
+   "w": 0.25
+  },
+  {
+   "gru": 2,
+   "pseudo": 1,
+   "seeds": 3,
+   "w": 0.25
+  },
+  {
+   "gru": 2,
+   "steps": 1500,
+   "drop": 0.3,
+   "seeds": 3,
+   "w": 0.25
+  },
+  {
+   "gru": 2,
+   "feat": "envd",
+   "seeds": 3,
+   "w": 0.75
+  },
+  {
+   "gru": 2,
+   "ssl_steps": 1500,
+   "seeds": 3,
+   "w": 0.75
+  },
+  {
+   "gru": 2,
+   "feat": "envd",
+   "ssl_steps": 500,
+   "seeds": 3,
+   "w": 0.75
+  },
+  {
+   "gru": 2,
+   "ssl_steps": 3000,
+   "seeds": 3,
+   "w": 0.75
+  },
+  {
+   "feat": "envcorr",
+   "seeds": 3,
+   "w": 0.3333333333333333
+  },
+  {
+   "feat": "envcorr",
+   "chdrop": 0.15,
+   "seeds": 3,
+   "w": 0.3333333333333333
+  },
+  {
+   "feat": "envcorr",
+   "pseudo": 1,
+   "seeds": 3,
+   "w": 0.3333333333333333
+  },
+  {
+   "feat": "envtan",
+   "seeds": 3,
+   "w": 1.0
+  },
+  {
+   "feat": "envtan",
+   "gru": 2,
+   "seeds": 3,
+   "w": 1.0
+  },
+  {
+   "feat": "envraw",
+   "chdrop": 0.15,
+   "seeds": 3,
+   "w": 0.25
+  },
+  {
+   "feat": "envraw",
+   "chdrop": 0.3,
+   "seeds": 3,
+   "w": 0.25
+  },
+  {
+   "feat": "envraw",
+   "chdrop": 0.15,
+   "pseudo": 1,
+   "seeds": 3,
+   "w": 0.25
+  },
+  {
+   "feat": "envraw",
+   "chdrop": 0.15,
+   "gru": 3,
+   "seeds": 3,
+   "w": 0.25
+  },
+  {
+   "feat": "envraw",
+   "gru": 2,
+   "seeds": 3,
+   "w": 1.0
+  },
+  {
+   "feat": "envraw",
+   "gru": 2,
+   "chdrop": 0.15,
+   "seeds": 3,
+   "w": 1.0
+  },
+  {
+   "feat": "envraw",
+   "gru": 2,
+   "chdrop": 0.15,
+   "steps": 1500,
+   "drop": 0.3,
+   "seeds": 3,
+   "w": 1.0
+  }
+ ],
+ "students": [
+  [
+   {
+    "gru": 2,
+    "feat": "envraw",
+    "chdrop": 0.15,
+    "pseudo_w": 1.0,
+    "seeds": 3,
+    "hidden": 96,
+    "steps": 1500,
+    "drop": 0.3,
+    "w": 0.6
+   },
+   {
+    "gru": 2,
+    "feat": "envraw",
+    "chdrop": 0.15,
+    "pseudo_w": 1.0,
+    "seeds": 3,
+    "hidden": 96,
+    "steps": 1500,
+    "drop": 0.3,
+    "contrast": 0.2,
+    "w": 0.6
+   },
+   {
+    "gru": 2,
+    "feat": "envraw",
+    "chdrop": 0.15,
+    "pseudo_w": 1.0,
+    "seeds": 3,
+    "hidden": 96,
+    "steps": 2000,
+    "drop": 0.3,
+    "w": 0.6
+   },
+   {
+    "gru": 2,
+    "feat": "envraw",
+    "chdrop": 0.15,
+    "pseudo_w": 1.0,
+    "seeds": 3,
+    "steps": 1500,
+    "drop": 0.3,
+    "w": 0.6
+   },
+   {
+    "gru": 2,
+    "feat": "envraw",
+    "chdrop": 0.15,
+    "pseudo_w": 1.0,
+    "seeds": 3,
+    "hidden": 96,
+    "w": 0.6
+   },
+   {
+    "gru": 2,
+    "feat": "envtan",
+    "pseudo_w": 1.0,
+    "seeds": 3,
+    "hidden": 96,
+    "w": 0.3333333333333333
+   },
+   {
+    "gru": 2,
+    "feat": "envtan",
+    "pseudo_w": 1.0,
+    "seeds": 3,
+    "w": 0.3333333333333333
+   },
+   {
+    "gru": 2,
+    "feat": "envtan",
+    "pseudo_w": 1.0,
+    "seeds": 3,
+    "steps": 1500,
+    "drop": 0.3,
+    "w": 0.3333333333333333
+   },
+   {
+    "gru": 2,
+    "feat": "envcorr",
+    "pseudo_w": 1.0,
+    "seeds": 3,
+    "w": 0.3333333333333333
+   },
+   {
+    "gru": 2,
+    "feat": "envcorr",
+    "pseudo_w": 1.0,
+    "seeds": 3,
+    "hidden": 96,
+    "w": 0.3333333333333333
+   },
+   {
+    "gru": 2,
+    "feat": "envcorr",
+    "pseudo_w": 1.0,
+    "seeds": 3,
+    "steps": 1500,
+    "drop": 0.3,
+    "w": 0.3333333333333333
+   }
+  ],
+  [
+   {
+    "gru": 2,
+    "hidden": 96,
+    "drop": 0.3,
+    "steps": 1500,
+    "pseudo_w": 1.0,
+    "seeds": 3,
+    "feat": "envraw",
+    "chdrop": 0.15,
+    "w": 1
+   },
+   {
+    "gru": 2,
+    "hidden": 96,
+    "drop": 0.3,
+    "steps": 1500,
+    "pseudo_w": 1.0,
+    "seeds": 3,
+    "feat": "envtan",
+    "w": 1
+   },
+   {
+    "gru": 2,
+    "hidden": 96,
+    "drop": 0.3,
+    "steps": 1500,
+    "pseudo_w": 1.0,
+    "seeds": 3,
+    "feat": "envcorr",
+    "w": 1
+   },
+   {
+    "gru": 2,
+    "hidden": 96,
+    "drop": 0.3,
+    "steps": 1500,
+    "pseudo_w": 1.0,
+    "seeds": 3,
+    "feat": "allfeat",
+    "chdrop": 0.15,
+    "w": 1
+   },
+   {
+    "gru": 2,
+    "hidden": 96,
+    "steps": 1500,
+    "pseudo_w": 1.0,
+    "seeds": 3,
+    "feat": "envraw",
+    "gain_aug": 0.8,
+    "chdrop": 0.3,
+    "drop": 0.3,
+    "w": 1
+   },
+   {
+    "gru": 2,
+    "hidden": 96,
+    "steps": 1500,
+    "pseudo_w": 1.0,
+    "seeds": 3,
+    "feat": "envraw",
+    "chdrop": 0.15,
+    "drop": 0.3,
+    "contrast": 0.3,
+    "noise": 0.1,
+    "w": 1
+   },
+   {
+    "gru": 2,
+    "hidden": 96,
+    "steps": 1500,
+    "pseudo_w": 1.0,
+    "seeds": 3,
+    "feat": "envtan",
+    "drop": 0.3,
+    "contrast": 0.2,
+    "w": 1
+   }
+  ]
+ ]
+}
