@@ -4,7 +4,8 @@
 
 ## Презентация
 
-[`presentation/PULSE_presentation.pdf`](presentation/PULSE_presentation.pdf) — защита (13 слайдов); отдельные слайды — в `presentation/slides/`.
+- [`presentation/PULSE_presentation_full.pdf`](presentation/PULSE_presentation_full.pdf) — полная презентация: основная часть + слайды для ответов на вопросы.
+- [`presentation/PULSE_presentation.pdf`](presentation/PULSE_presentation.pdf) — основная часть (13 слайдов); отдельные слайды — в `presentation/slides/`.
 
 ## **airi-emg-hand-decoding** — основной файл с решением
 
