@@ -2,6 +2,10 @@
 
 **Скрытый тест этапа 2: wMAE = 0.0821 рад — 1-е место** (2-е место — 0.1073, бейзлайн организаторов — 0.346).
 
+## Архитектура
+
+![PULSE architecture](presentation/PULSE_model_architecture.png)
+
 ## Презентация
 
 - [`presentation/PULSE_presentation_full.pdf`](presentation/PULSE_presentation_full.pdf) — полная презентация: основная часть + слайды для ответов на вопросы.
