@@ -1,6 +1,13 @@
+## Результат
+
+**Скрытый тест этапа 2: wMAE = 0.0821 рад — 1-е место** (2-е место — 0.1073, бейзлайн организаторов — 0.346).
+
 ## **airi-emg-hand-decoding** — основной файл с решением
 
-В нём есть основная модель (и её облеченные версии: quick и lite)
+В нём основная модель (финальный ансамбль `final_v4`) и её облегчённые версии `simple.py` и `lite.py`.
+
+- Запуск финала: `python final.py --test-dir data/test --template data/phase2_sample_submission.csv --out outputs/phase2_final.csv --config configs/final_v4.json --model-dir models`
+- Описание решения: `README.md`, `HANDOFF.md`, `EXPERIMENTS.md`, `CHEATSHEET.md` внутри папки.
 
 
 ## **Pulse-app** — приложение с обученной lite-версией модели
